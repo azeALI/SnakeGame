@@ -8,7 +8,7 @@ import java.util.Scanner;
 
 
 public class API {
-    private static String api;
+    public static String api;
     public API(String api){
         this.api = api;
     }
