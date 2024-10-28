@@ -27,7 +27,7 @@ class SnakeGame extends JFrame {
         this.ld = new Leaderboard(this.user);
         this.setTitle("Snake Game");
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        this.setSize(760, 639);
+        this.setSize(760, 649);
         this.setResizable(false);
         this.setLayout(null);
         this.setFocusable(true);
@@ -115,7 +115,7 @@ class Snake {
         grid[X][Y].setBorder(BorderFactory.createLineBorder(Color.black, 1));
 
         grid[tailX][tailY].setBorder(null);
-        grid[tailX][tailY].setBackground(Color.white);
+        grid[tailX][tailY].setBackground(new Color(20,20,20));
 
     }
 
@@ -157,7 +157,7 @@ class GamePanel extends JPanel implements KeyListener {
         for (int i = 0; i < 20; i++) {
             for (int j = 0; j < 20; j++) {
                 grid[i][j] = new JPanel();
-                grid[i][j].setBackground(Color.white);
+                grid[i][j].setBackground(new Color(20,20,20));
                 add(grid[i][j]);
             }
         }
@@ -429,4 +429,5 @@ class Leaderboard extends JPanel {
         }
     }
 }
+
 
