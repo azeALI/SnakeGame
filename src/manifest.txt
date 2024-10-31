@@ -1,2 +1,1 @@
 Main-Class: Main
-Class-Path: gson.jar
