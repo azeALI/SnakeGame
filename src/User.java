@@ -1,6 +1,6 @@
 public class User {
     private int id;
-    private String name="";
+    private String name="Guest";
     private String score;
 
     public int getId() {

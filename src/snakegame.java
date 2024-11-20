@@ -27,7 +27,7 @@ class SnakeGame extends JFrame {
         this.ld = new Leaderboard(this.user);
         this.setTitle("Snake Game");
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        this.setSize(760, 649);
+        this.setSize(760, 610);
         this.setResizable(false);
         this.setLayout(null);
         this.setFocusable(true);

@@ -6,6 +6,6 @@ public class Main {
     Scanner sc = new Scanner(new File("api.txt"));
     API.api = sc.nextLine();
     sc.close();
-    new Login();
+    new Mode();
   }
 }
