@@ -8,9 +8,5 @@ You car run it with : $ java -jar snakeGame.jar
 
 
 
-TO BE ABLE TO PLAY THE GAME, SnakeServer APP MUST BE DOWNLOADED AND RUNNING ON LOCAL OR REMOTE SERVER.
-YOU CAN GET IT ON https://github.com/azeAli/SnakeServer
-
-On snake/api.txt file, you have to specify your server ip and port,eg:localhost:8080
-
-
+TO BE ABLE TO PLAY THE GAME ONlINE, YOU HAVE TO SPECIFY IP ADRESS ON ip.txt FILE, e.g.:localhost:8080 . THIS IS IP OF SnakeServer APP RUNNING ON LOCAL OR REMOTE SERVER.
+YOU CAN GET SNAKE SERVER ON https://github.com/azeAli/SnakeServer
