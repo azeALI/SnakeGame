@@ -9,6 +9,7 @@ import java.util.Scanner;
 
 public class API {
     public static String api;
+    public static boolean mode = true;
     public API(String api){
         this.api = api;
     }

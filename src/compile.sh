@@ -1,6 +1,7 @@
 #!/bin/sh
-javac *.java
 mkdir snake
+javac *.java
 mv *.class snake/
-cp api.txt snake/
-cp -r com snake/
+cp -r com/ snake/
+cp ip.txt snake/
+cp manifest.txt snake/

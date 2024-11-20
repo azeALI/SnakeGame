@@ -6,10 +6,14 @@ import java.awt.event.ActionListener;
 import javax.swing.BorderFactory;
 import javax.swing.JButton;
 import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.border.Border;
 
 public class Mode extends JFrame {
   JButton single = new JButton("Offline");
   JButton multi = new JButton("Online");
+  Font font = new Font("JetBrains Mono ExtraBold", Font.PLAIN, 20);
+  Border border = BorderFactory.createLineBorder(Color.white, 1, true);
 
   public Mode() {
     this.setSize(400, 400);
@@ -19,36 +23,42 @@ public class Mode extends JFrame {
     this.setDefaultCloseOperation(EXIT_ON_CLOSE);
     getContentPane().setBackground(Color.black);
 
-    single.setBounds(250, 140, 90, 90);
+    single.setBounds(215, 140, 150, 60);
     single.setBackground(Color.black);
     single.setForeground(Color.white);
-    single.setBorder(BorderFactory.createLineBorder(Color.white, 1, true));
-    single.setFont(new Font("JetBrains Mono", 1, 20));
+    single.setBorder(border);
+    single.setFont(font);
+    single.setHorizontalAlignment(JLabel.CENTER);
+    single.setFocusable(false);
     single.addActionListener(new ActionListener() {
       @Override
       public void actionPerformed(ActionEvent e) {
         try {
+          API.mode = false;
           new SnakeGame(new User());
+          dispose();
         } catch (Exception exc) {
         }
       }
     });
     this.add(single);
 
-    multi.setBounds(90, 140, 90, 90);
+    multi.setBounds(30, 140, 150, 60);
     multi.setBackground(Color.black);
     multi.setForeground(Color.white);
-    multi.setBorder(BorderFactory.createLineBorder(Color.white, 1, true));
-    multi.setFont(new Font("a", 1, 20));
+    multi.setHorizontalAlignment(JLabel.CENTER);
+    multi.setBorder(border);
+    multi.setFont(font);
+    multi.setFocusable(false);
     multi.addActionListener(new ActionListener() {
-
       @Override
       public void actionPerformed(ActionEvent e) {
+        API.mode = true;
         new Login();
-
+        dispose();
       }
     });
     this.add(multi);
-
+    this.setVisible(true);
   }
 }

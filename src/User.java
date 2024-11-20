@@ -1,7 +1,7 @@
 public class User {
-    private int id;
+    private int id=0;
     private String name="Guest";
-    private String score;
+    private String score="0";
 
     public int getId() {
         return id;
