@@ -67,6 +67,7 @@ public class Login extends JFrame {
     submit.setHorizontalAlignment(JLabel.CENTER);
     submit.setBackground(Color.black);
     submit.setForeground(Color.white);
+    submit.setFocusable(false);
     submit.setBorder(border);
 
     submit.addActionListener(new ActionListener() {
