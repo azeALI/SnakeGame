@@ -27,7 +27,7 @@ class SnakeGame extends JFrame {
     this.hScore = Integer.parseInt(user.getScore());
     this.setTitle("Snake Game");
     this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-    this.setSize(560, 610);
+    this.setSize(576, 649);
     this.setResizable(false);
     this.setLayout(null);
     this.setFocusable(true);
@@ -51,7 +51,7 @@ class SnakeGame extends JFrame {
     if (API.mode) {
       this.ld = new Leaderboard(this.user);
       this.add(ld);
-      this.setSize(760,610);
+      this.setSize(772,649);
     }
     this.setVisible(true);
     timer.start();
